@@ -1,8 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Category, Meal
 from .forms import AddMeal
-from orders.models import OrderForm
-
+from orders.forms import OrderForm
 # Create your views here.
 
 

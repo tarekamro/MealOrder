@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import OrderForm, Order
+from .models import Order
+from .forms import OrderForm
 from meals.models import Meal
 
 # Create your views here.
