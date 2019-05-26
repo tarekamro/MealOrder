@@ -1,0 +1,12 @@
+{% extends "base.html" %}   # MealOrder/templates/base.html
+
+{% block title %}Admin View{% endblock %}
+
+{% block content %}
+
+List of orders:<br>
+{% for order in orders %}
+    {{order.order_no}}. {{ order }} - Ordered at: {{ order.ordered_at }}<br>
+{% endfor %}
+
+{% endblock %}

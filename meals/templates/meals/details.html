@@ -1,0 +1,18 @@
+{% extends "base.html" %}   # MealOrder/templates/base.html
+
+{% block title %}Meal details{% endblock %}
+
+{% block content %}
+
+<h3>{{ meal.name }}</h3>
+<img src="{{ meal.image.url }}" class="meal_img"><br><br>
+Price: {{ meal.price }} $ <br>
+<br>
+    <form action="{% url 'make_order' meal.id %}" method="POST">
+        {% csrf_token %}
+            {{ form }}
+        <input type="submit" value="make_order">
+
+    </form>
+
+{% endblock %}

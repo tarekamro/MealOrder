@@ -1,0 +1,31 @@
+img.cat_img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+img.meal_img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+h3 {
+    font-size: 20px;
+    color: green;
+}
+
+h4 {
+    font-size: 15px;
+    color: blue;
+}

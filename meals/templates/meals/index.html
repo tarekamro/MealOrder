@@ -1,0 +1,16 @@
+{% extends "base.html" %}   # MealOrder/templates/base.html
+
+{% block title %}Hot Meals{% endblock %}
+
+{% block content %}
+
+{% for cat in cats %}
+    <h2>{{ cat }} Category</h2><br>
+    {% for meal in cat.meals_by_cat %}
+        <img src="{{ meal.image.url }}" class="meal_img"><br><br>
+        <a href="{{ meal.get_absolute_url }}">{{ meal }}</a><br><br><br>
+    {% endfor %}
+{% endfor %}
+
+
+{% endblock %}

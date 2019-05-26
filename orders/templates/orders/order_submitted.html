@@ -1,0 +1,17 @@
+{% extends "base.html" %}   # MealOrder/templates/base.html
+
+{% block title %}Order Submitted{% endblock %}
+
+{% block content %}
+
+Order has been submitted successfully ! <br><br>
+
+<!--{{ order }}<br><br>-->
+
+Order details:<br>
+Meal: {{ order.meal }}<br>
+Quantity: {{ order.quantity }}<br>
+Requester:  {{ order.requester }}<br>
+Ordered at:  {{ order.ordered_at }}<br><br>
+
+{% endblock %}

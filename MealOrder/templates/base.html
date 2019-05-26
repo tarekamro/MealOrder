@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Hot Meals{% endblock %}</title>
+
+    <link href="{% static 'MealOrder/css/css.css' %}"  rel="stylesheet">
+
+</head>
+<body>
+
+</body>
+</html>
+
+<html>
+<body>
+    <div id="messages">
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <!--<div id="content">-->
+    <div class="container">
+
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
