@@ -6,7 +6,6 @@
 
 {% block content %}
 
-
     <form action="{% url 'add_meal' %}" enctype="multipart/form-data" method="POST">
         {% csrf_token %}
             {{ form|crispy }}

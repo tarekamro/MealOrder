@@ -26,7 +26,6 @@ def meal_details(request, id, slug):
 
 
 def add_meal(request):
-    # form = AddMeal()
 
     if request.method == "POST":
         form = AddMeal(request.POST)

@@ -20,7 +20,6 @@ from meals import views as meals_views
 from orders import views as orders_views
 from . import views
 
-# app_name = 'meals'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,8 +29,6 @@ urlpatterns = [
     # path('', meals_views.homepage, name='homepage'),
 
     path('', meals_views.all_meals, name='all_meals'),
-
-    # path('meals/', meals_views.all_meals, name='all_meals'),
 
     path('details/<int:id>/<str:slug>/', meals_views.meal_details, name='meal_details'),
 

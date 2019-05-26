@@ -24,7 +24,6 @@ def make_order(request, id):
         form = OrderForm()
 
     return redirect('index.html')
-    # return redirect(reverse('make_order'))
 
 
 
